@@ -57,7 +57,7 @@ Run script below to create `smstask.sh` file in `/data/data/com.termux/files/hom
 	  termux-wake-lock
 	  sshd
           
-ssh "$server" -i "$server_key" 'ids=$(lsof -t -i:'"$remote_port"'); if [ "$ids" ]; then kill $ids; fi'
+          ssh "$server" -i "$server_key" 'ids=$(lsof -t -i:'"$remote_port"'); if [ "$ids" ]; then kill $ids; fi'
 	  
 	  ssh -f -N -o "ServerAliveInterval 60" -R "$remote_port":localhost:8022 "$server" -i "$server_key"
 	  log_action
