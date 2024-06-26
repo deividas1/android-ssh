@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this tutorial all addresses `101.102.103.104` replace with your `server address` and `192.168.0.10` with `Android's private address`.
+In this tutorial replace all addresses `101.102.103.104` with your `server address` and `192.168.0.10` with `Android's private address`.
 
 ## App installation
 
