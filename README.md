@@ -85,6 +85,10 @@ Set correct script variables:
     authorized_phones="37060020020 37060020021"
     log_file="/data/data/com.termux/files/home/.termux/tasker/smstask.log"
 
+Next step is to add server's fingerprint to `known_hosts`
+
+     ssh-keyscan -t ed25519 101.102.103.104 >> ~/.ssh/known_hosts
+
 ## Creating ssh key on Android
 At first you can ssh to your phone with password. For that set the password using command `passwd` and run ssh server with `sshd` command. Connect to phone with command:
 
@@ -149,10 +153,6 @@ Copy `server` content from local terminal and run command on Android terminal
     -----END OPENSSH PRIVATE KEY-----" > ~/.ssh/server
     
     chmod 600 ~/.ssh/server
- 
-The last step is to add server's fingerprint to `known_hosts` (Android terminal)
-
-     ssh-keyscan -t ed25519 101.102.103.104 >> ~/.ssh/known_hosts
     
 ## Automate configuration
 
