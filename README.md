@@ -94,7 +94,7 @@ Set permissions
     chmod 700 ~/.ssh
     chmod 600 android
     chmod 644 android.pub
-    chmod 644 authorized_keys
+    chmod 600 authorized_keys
 
 ## Copy key to your PC with USB cable
 
@@ -131,7 +131,7 @@ Connect to server via local console and run these commands
 
     chmod 600 server
     chmod 644 server.pub
-    chmod 644 authorized_keys
+    chmod 600 authorized_keys
     
     cat server
 
