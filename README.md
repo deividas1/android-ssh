@@ -14,7 +14,6 @@ Run command which will install required packages
 
     apt update
     apt install -y openssh net-tools
-
     sshd    
     mkdir ~/.termux/tasker
     
