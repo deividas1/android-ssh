@@ -13,13 +13,9 @@ Our goal is to be able to start and stop ssh tunnel to Linux server from Android
 Run command which will install required packages
 
     apt update
-    apt install -y openssh net-tools termux-services mc
+    apt install -y openssh net-tools
 
-    mkdir -p $PREFIX/var/service/sshd/log
-    ln -sf $PREFIX/share/termux-services/svlogger $PREFIX/var/service/sshd/log/run
-    sv-enable sshd
-    sv up sshd
-    
+    sshd    
     mkdir ~/.termux/tasker
     
     termux-setup-storage
